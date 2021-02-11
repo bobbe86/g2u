@@ -1,24 +1,182 @@
-html, body{
-    height: 100%;
-    width:100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 .navbar {
-    background-color:#1d79b8 ;
-    padding: 1% 0;
-    font-size: 1.2em;
-    
-}
-.navbar-brand img{
-    max-width: 100px;
-    max-height: 100px;
-    /* padding: 0px 15px 5px; */
+    background: #1d79b8;
 }
 
-    
-    
-    
-    
-    
-    
-    
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    background: #f4f4f4;
+    color: #1d79b8;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
+
+.header {
+    background-image: url("/img/greatfood.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1 {
+    color: #1d79b8;
+}
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.description button {
+    border: 1px solid #1d79b8;
+    background: #1d79b8;
+    color: #fff;
+}
+
+.menu {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.menu h1 {
+    color: #1d79b8;
+    margin: 2em;
+}
+
+.menu img{
+    height: 100%;
+       width: 100%;
+       border-radius: 50%
+   }
+
+.menu span {
+    display: block;
+    color: #888;
+    position: relative ;
+    left: 115px;
+}
+
+.menu .desc {
+    padding: 2em;
+    border-left: 4px solid #1d79b8;
+}
+
+.menu .desc h3 {
+    color: #1d79b8;
+}
+
+.menu .desc p {
+    line-height: 2;
+    color: #888;
+}
+
+/* reservation */
+.reservation {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.reservation h1 {
+    color: #1d79b8;
+    margin: 2em;
+}
+
+.reservation img{
+    height: 100%;
+       width: 100%;
+       border-radius: 50%
+   }
+
+.reservation span {
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+
+.reservation .desc {
+    padding: 2em;
+    border-left: 4px solid #1d79b8;
+}
+
+.reservation .desc h3 {
+    color: #1d79b8;
+}
+
+.reservation .desc p {
+    line-height: 2;
+    color: #888;
+}
+/* About Us */
+.about {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.about h1 {
+    color: #1d79b8;
+    margin: 2em;
+}
+
+.about img{
+    height: 100%;
+       width: 100%;
+       border-radius: 50%
+   }
+
+.about span {
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+
+.about .desc {
+    padding: 2em;
+    border-left: 4px solid #1d79b8;
+}
+
+.about .desc h3 {
+    color: #1d79b8;
+}
+
+.about .desc p {
+    line-height: 2;
+    color: #888;
+}
+
