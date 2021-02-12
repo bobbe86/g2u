@@ -12,32 +12,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
 
     <title>G2U</title>
 
 </head>
 
 <header class="header">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="description">
-            <h1> Welcome to Greek 2 U! Andersonville's #1 Greek Restaurant!
+    <div class="overlay">
+        <div class="container">
+            <div class="description">
+                <h1> Greek 2 U! Andersonville's #1 Greek Restaurant!</h1>
                 <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button class="btn btn-outline-secondary btn-lg">Reservation</button>
-            </h1>
+                <button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" id="reserveButton"
+                    data-target="#reservationModal">Reservation</button>
+            </div>
         </div>
-    </div>
-
+    </div>Ï
 </header>
 
 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#"><img src="/img/logo.jpg" width="100" height="100"
+                class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,13 +46,13 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-4">
                 <li class="nav-item">
-                    <a class="nav-link" data-value="menu" href="#">Menu</a>
+                    <a class="nav-link" data-value="menu" href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="about" href="#">About Us</a>
+                    <a class="nav-link " data-value="about" href="#about">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="reservation" href="#">Reservation</a>
+                    <a class="nav-link " data-value="reservation" href="#reservation">Reservation</a>
                 </li>
             </ul>
         </div>
@@ -80,7 +81,7 @@
     <div class="about" id="about">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="img/greekfamily.jpg" class="img-fluid">
+                <img src="/img/greekfamily.jpg" class="img-fluid">
                 <span class="text-justify"></span>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 desc">
@@ -95,12 +96,12 @@
                 </p>
             </div>
         </div>
-        <!-- reservation -->
     </div>
+    <!-- reservation -->
     <div class="reservation" id="reservation">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="img/reservation.jpg" class="img-fluid">
+                <img src="/img/reservation.jpg" class="img-fluid">
                 <span class="text-justify"></span>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 desc">
@@ -116,12 +117,80 @@
             </div>
         </div>
     </div>
+    <!-- Modal component -->
+    <div id="reservationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve a Table</h3>
+                    <button type="button" class="close" data-dismiss="modal" data-target>&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <!-- CREATE THE FORM -->
+                        <form id="reservationForm">
+                            <div class="form-group row">
+                                <label for="numDiners" class="col-sm-6 col-form-label">Party Size</label>
+                                <!--Select Dropdown-->
+                                <div class="col">
+                                    <select name="nuDiners" id="nuDiners" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Date-->
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
+                                </div>
+                            </div>
+                            <!--Search Button-->
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
 
 
-    <footer>
+
+    <footer class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Contact Us</h3>
+            <br>
+            <h4>Contact Address and Contact Info</h4>
+        </div>
+        <div class="col-sm-4">
+            <h3>Connect</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="col-sm-4">
+            <img src="/img/logo.jpg" width="100" height="100"
+            class="d-inline-block align-top" alt="">   
+        </div>
+    </div>
 
     </footer>
 
@@ -129,6 +198,7 @@
 
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
