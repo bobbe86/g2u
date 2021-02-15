@@ -22,9 +22,6 @@
     justify-content: flex-end;
 }
 
-.navbar-toggler {
-    background: #fff !important;
-}
 
 .header {
     background-image: url("/img/greatfood.jpg");
@@ -207,4 +204,42 @@ footer {
 .fa:hover{
     color: antiquewhite;
     text-decoration: none;
+}
+
+.order {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.order h1 {
+    color: #1d79b8;
+    margin: 2em;
+}
+
+.order img{
+    height: 100%;
+       width: 100%;
+       border-radius: 50%
+   }
+
+.order span {
+    display: block;
+    color: #888;
+    position: relative ;
+    left: 115px;
+}
+
+.order .desc {
+    padding: 2em;
+    border-left: 4px solid #1d79b8;
+}
+
+.order .desc h3 {
+    color: #1d79b8;
+}
+
+.order .desc p {
+    line-height: 2;
+    color: #888;
 }

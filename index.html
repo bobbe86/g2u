@@ -20,17 +20,18 @@
 
 <header class="header">
     <div class="overlay">
-        <div class="container">
-            <div class="description">
-                <h1> Greek 2 U! Andersonville's #1 Greek Restaurant!</h1>
-                <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" id="reserveButton"
-                    data-target="#reservationModal">Reservation</button>
+        <div class="container-fluid">
+                    <div class="description">
+                        <h1> Greek 2 U! Andersonville's #1 Greek Restaurant!</h1>
+                        <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                            in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal"
+                            id="reserveButton" data-target="#reservationModal">Reservation</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>Ï
 </header>
 
 
@@ -39,7 +40,7 @@
     <nav class="navbar navbar-expand-lg fixed-top ">
         <a class="navbar-brand" href="#"><img src="/img/logo.jpg" width="100" height="100"
                 class="d-inline-block align-top" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,10 +50,13 @@
                     <a class="nav-link" data-value="menu" href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="about" href="#about">About Us</a>
+                    <a class="nav-link " data-value="reservation" href="#reservation">Reservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="reservation" href="#reservation">Reservation</a>
+                    <a class="nav-link " data-value="orderonline" href="#orderonline">Order Online</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="about" href="#about">About Us</a>
                 </li>
             </ul>
         </div>
@@ -77,26 +81,7 @@
             </div>
         </div>
     </div>
-    <!-- about us -->
-    <div class="about" id="about">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="/img/greekfamily.jpg" class="img-fluid">
-                <span class="text-justify"></span>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 desc">
 
-                <h3>About Us</h3>
-                <p>
-                    ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-    </div>
     <!-- reservation -->
     <div class="reservation" id="reservation">
         <div class="row">
@@ -107,6 +92,45 @@
             <div class="col-lg-8 col-md-8 col-sm-12 desc">
 
                 <h3>Reservation</h3>
+                <p>
+                    ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="order" id="order">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="/img/order.jpg" class="img-fluid">
+                <span class="text-justify"></span>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+
+                <h3>Order</h3>
+                <p>
+                    ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="/img/greekfamily.jpg" class="img-fluid">
+                <span class="text-justify"></span>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+
+                <h3>About Us</h3>
                 <p>
                     ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -174,23 +198,22 @@
 
 
     <footer class="container-fluid text-center">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>Contact Us</h3>
-            <br>
-            <h4>Contact Address and Contact Info</h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <br>
+                <h4>Contact Address and Contact Info</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="col-sm-4">
+                <img src="/img/logo.jpg" width="100" height="100" class="d-inline-block align-top" alt="">
+            </div>
         </div>
-        <div class="col-sm-4">
-            <h3>Connect</h3>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </div>
-        <div class="col-sm-4">
-            <img src="/img/logo.jpg" width="100" height="100"
-            class="d-inline-block align-top" alt="">   
-        </div>
-    </div>
 
     </footer>
 
